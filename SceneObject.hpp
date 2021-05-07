@@ -5,7 +5,7 @@
 //  Created by 伊米哇嘎克 on 2021/5/6.
 //
 
-#define DRAW_INTERACTIVE_DEBUG_FRAME
+// #define DRAW_INTERACTIVE_DEBUG_FRAME
 
 #ifndef SceneObject_hpp
 #define SceneObject_hpp

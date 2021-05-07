@@ -9,13 +9,22 @@ The project was written and built on XCode on MacOS. If you want to build it on 
 - Install `freeglut` library.
 - Prepare a C++ compiler environment.
 - Open the `SystemIncludes.h`, you will see the following includes:
-```c++
+```cpp
 #define GL_SILENCE_DEPRECATION
 #include <OpenGL/gl.h>
 #include <OpenGL/glu.h>
 #include <GLUT/glut.h>
 ```
 That only works on Mac. Please change it to your GL and GLUT library.
+
+## Debug Draw
+I have removed the debug draw (red interactive frame), you can get it back by removing the following comment sign in file `SceneObject.hpp`:
+
+```cpp
+// #define DRAW_INTERACTIVE_DEBUG_FRAME
+```
+
+Removing the comment sign `//` in the front will activate the debug draw. All the scene objects will display a red frame when you move your mouse on it.
 
 ## How to use
 When build and run, you will see the following frame:
