@@ -26,7 +26,7 @@ void DraggableSceneObject::onMouseMove(int x, int y)
     int newX = x, newY = y;
     if (countOverlapOnly)
     {
-        printf("Frag (%d, %d), (%d, %d)\n", lastX, newX, location.x, location.x + width);
+        //printf("Frag (%d, %d), (%d, %d)\n", lastX, newX, location.x, location.x + width);
         int ovx = math::getOverlapLength(lastX, newX, location.x, location.x + width);
         int ovy = math::getOverlapLength(lastY, newY, location.y, location.y + height);
         onDragMove(ovx, ovy);

@@ -54,13 +54,13 @@ void SliderButton::onDragStart(int x, int y)
 // Will transfer offsets on 2 directions.
 void SliderButton::onDragMove(int x, int y)
 {
-    printf("Drag move (%d, %d)\n", x, y);
+    //printf("Drag move (%d, %d)\n", x, y);
     if (isDragging)
     {
         double delta = (double) x / SLIDER_RAIL_LENGTH;
         setPercentage(math::limit(currentValue + delta, 0.0, 1.0));
         // Now the [currentValue] should be changed.
-        printf("Percentage to (%.2f)\n", currentValue);
+        //printf("Percentage to (%.2f)\n", currentValue);
         if (onPercentChange) onPercentChange(currentValue);
     }
 }

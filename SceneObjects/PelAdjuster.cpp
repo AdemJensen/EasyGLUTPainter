@@ -30,7 +30,6 @@ bool PelAdjusterScaler::isPointInMe(int x, int y)
 }
 void PelAdjusterScaler::onDragMove(int x, int y)
 {
-    printf("%d\n", y);
     pa->reshapeMyMaster(pa->getMyMaster()->getLocation(), pa->getMyMaster()->getWidth() + x, pa->getMyMaster()->getHeight() + y);
 }
 

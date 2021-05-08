@@ -117,7 +117,6 @@ void onMouseButton(int button, int state, int x, int y) {
                             MOUSE_DOWN_OBJECT = objects[i];
                             objects[i]->onMouseDown(x, y);
                             Color3F temp3 = ((AdjustablePolygonObject*) objects[i])->getColor();
-                            printf("Color:(%.2f, %.2f, %.2f)\n", temp3.r, temp3.g, temp3.b);
                             bcb->setColor(((AdjustablePolygonObject*) objects[i])->getColor());
                             notTriggered = false;
                             break;
@@ -222,6 +221,8 @@ void onKeyDown(unsigned char key, int x, int y)
                 AdjustablePolygonObject* obj = new AdjustablePolygonObject(copyPasteBoard);
                 objects.push_back(obj);
                 obj->reposition(x, y);
+                pa->setMyMaster(obj);
+                bcb->setColor(obj->getColor());
                 glutPostRedisplay();
             }
             break;

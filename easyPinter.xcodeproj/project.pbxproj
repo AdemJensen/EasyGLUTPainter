@@ -22,6 +22,7 @@
 		EEA19462264535E800395F85 /* BottomColorBar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEA19460264535E800395F85 /* BottomColorBar.cpp */; };
 		EEA1946626455CA500395F85 /* Magnet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEA1946526455CA500395F85 /* Magnet.cpp */; };
 		EEA1946926456C6900395F85 /* PelAdjuster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEA1946726456C6900395F85 /* PelAdjuster.cpp */; };
+		EED8EA3626460F16007A5E99 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EED8EA3526460F16007A5E99 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		EEA1946526455CA500395F85 /* Magnet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Magnet.cpp; sourceTree = "<group>"; };
 		EEA1946726456C6900395F85 /* PelAdjuster.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PelAdjuster.cpp; sourceTree = "<group>"; };
 		EEA1946826456C6900395F85 /* PelAdjuster.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PelAdjuster.hpp; sourceTree = "<group>"; };
+		EED8EA3526460F16007A5E99 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		EEA1940E2643DEE500395F85 = {
 			isa = PBXGroup;
 			children = (
+				EED8EA3526460F16007A5E99 /* README.md */,
 				EEA194642645572D00395F85 /* Magnet.h */,
 				EEA1946526455CA500395F85 /* Magnet.cpp */,
 				EEA1946326454F0A00395F85 /* SystemIncludes.h */,
@@ -186,6 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED8EA3626460F16007A5E99 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

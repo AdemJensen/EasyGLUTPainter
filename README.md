@@ -24,7 +24,9 @@ I have removed the debug draw (red interactive frame), you can get it back by re
 // #define DRAW_INTERACTIVE_DEBUG_FRAME
 ```
 
-Removing the comment sign `//` in the front will activate the debug draw. All the scene objects will display a red frame when you move your mouse on it.
+Removing the comment sign `//` in the front will activate the debug draw. All the SceneObjects will display a red frame when you move your mouse on it.
+
+CAUTION: If you want to extend you own SceneObject, make sure your overriden `onMouseMove()` and `repaint()` function call the ancestor's implementation first, or the debug draw won't be effective.
 
 ## How to use
 When build and run, you will see the following frame:
@@ -40,6 +42,7 @@ All the functions are switched and achieved by keyboard:
 - `V`: Paste a polygon (From program-wide paste board, not system-wide).
 - `U`: Move a polygon to the front (level + 1).
 - `J`: Move a polygon to the back (level - 1).
+- `Z`: Retract a point when drawing polygon (DRAW mode only).
 
 When drawing polygon, you can hold key `X` to draw vertical and horizontal lines:
 
